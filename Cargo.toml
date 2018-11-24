@@ -1,0 +1,10 @@
+[package]
+name = "tower-example"
+version = "0.1.0"
+authors = ["marcelo"]
+
+[dependencies]
+tokio = "0.1.10"
+tower-web = "0.3.2"
+serde_derive = "0.9"
+serde = "1.0.80"

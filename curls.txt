@@ -1,0 +1,18 @@
+curl http://127.0.0.1:8080/
+
+curl http://127.0.0.1:8080/hello/marcelo
+
+curl http://127.0.0.1:8080/hello/marcelo/ana
+
+curl http://127.0.0.1:8080/number/123
+
+curl http://127.0.0.1:8080/query-string?nome=marcelo
+
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"username":"xyz","password":"xyz"}' \
+  http://localhost:8080/request-body
+
+curl -vv -H 'x-required: One' http://localhost:8080/headers
+
+curl -vv -H 'x-required: One' -H 'x-optional: two' http://localhost:8080/headers
